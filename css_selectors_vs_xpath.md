@@ -28,5 +28,11 @@ and a bit shorter.
 | p element by attribute  | p[attr="value"]         | //p[@attr="value"]                  |
 | Direct child            | head > title            | //head/title                        |
 | Child                   | html title              | //html//title                       |
-| element containing text | - not possible -        | //p[contains(text(), 'Hi there')]   |
+| Element containing text | - not possible -        | //p[contains(text(), 'Hi there')]   |
 | 2nd row in table        | table tr:nth-of-type(2) | //table//tr[2]                      |
+
+
+Note: while the CSS selector `.name` selects all elements that contain this class name,
+the XPath selector `//*[@class='name']`  finds only elements that contain **exactly**
+this class name. To find all elements that contain this class name, you need to
+use `//*[contains(@class,"name")]`.
