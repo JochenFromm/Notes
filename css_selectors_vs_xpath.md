@@ -4,11 +4,15 @@
 [XPath and CSS Selectors](https://johnresig.com/blog/xpath-css-selectors/)
 are commonly used to find elements in a web page.
 
-XPath stands for XML Path and is a query language to identify elements 
-from an XML document - or an web page in HTML. It is common for Selenium.
+XPath stands for XML Path and is a "path like" query language to identify 
+elements from an XML document - or a web page in HTML. It is often used in
+[Selenium](https://selenium-python.readthedocs.io/) in combination
+with Python for testing, crawling and scraping.
 
-CSS selectors define a pattern to select elements in a HTML page too.
-The syntax is similar, but slighty different.
+CSS selectors are the part of [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 
+that links the CSS styles to specific parts of the web page. Like XPaths they define 
+a pattern to select elements in a HTML page. The syntax is similar, but slighty different
+and a bit shorter.
 
 
 |                         | CSS Selector            | XPATH                               |
