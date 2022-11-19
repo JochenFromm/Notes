@@ -25,6 +25,7 @@ and a bit shorter.
 |                         |                         | //*[contains(@class,"name")]        |
 | Element by two classes  | .name1.name2            | //*[@class='name1 name2']           |
 | p element by class      | p.name                  | //p[contains(@class,"name")]        |
+| Element by attribute    | *[attr="value"]         | //*[@attr="value"]                  |
 | p element by attribute  | p[attr="value"]         | //p[@attr="value"]                  |
 | Direct child            | head > title            | //head/title                        |
 | Child                   | html title              | //html//title                       |
@@ -35,4 +36,4 @@ and a bit shorter.
 Note: while the CSS selector `.name` selects all elements that contain this class name,
 the XPath selector `//*[@class='name']`  finds only elements that contain **exactly**
 this class name. To find all elements that contain this class name, you need to
-use `//*[contains(@class,"name")]`.
+use the longer form `//*[contains(@class,"name")]`.
